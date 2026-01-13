@@ -34,6 +34,19 @@
 
 <br/>
 
+## 🎥 Project Walkthrough
+
+<div align="center">
+    
+  <a href="https://www.linkedin.com/posts/mohamed-elmonyar_csharp-sqlserver-softwaredevelopment-activity-7351874908244598784-1Ye6?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFWkEG8BYfoNH-bD03ZtssRbWcD_4_yo3z4" target="_blank">
+    <img src="Pictures/1.jpg" alt="Watch the Video" width="100%" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); border: 4px solid #0078D7;">
+  </a>
+  <br/>
+  <h3>🔴 Click the image above to watch the full system demo</h3>
+  <p><i>A complete walkthrough of the licensing workflow, database architecture, and security features.</i></p>
+    
+</div>
+
 ---
 
 ## 🌟 Overview
