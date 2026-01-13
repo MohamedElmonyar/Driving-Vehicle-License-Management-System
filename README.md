@@ -687,30 +687,14 @@ public partial class ctrlPersonCard : UserControl
 
 <div align="center">
 
-### 🔐 Login & Dashboard
-
-<img src="./Screenshots/Login.png" width="45%" style="border: 3px solid #0078D7; margin: 10px;">
-<img src="./Screenshots/Dashboard.png" width="45%" style="border: 3px solid #0078D7; margin: 10px;">
-
-### 👤 Person Management
-
-<img src="./Screenshots/PeopleList.png" width="90%" style="border: 3px solid #0078D7; margin: 10px;">
-
-### 🪪 License Issuance Workflow
-
-<img src="./Screenshots/NewApplication.png" width="45%" style="border: 3px solid #0078D7; margin: 10px;">
-<img src="./Screenshots/TestAppointment.png" width="45%" style="border: 3px solid #0078D7; margin: 10px;">
-
-### 🎓 Test Management
-
-<img src="./Screenshots/TakeTest.png" width="45%" style="border: 3px solid #0078D7; margin: 10px;">
-<img src="./Screenshots/LicenseIssued.png" width="45%" style="border: 3px solid #0078D7; margin: 10px;">
-
-### 🔄 License Operations
-
-<img src="./Screenshots/RenewLicense.png" width="45%" style="border: 3px solid #0078D7; margin: 10px;">
-<img src="./Screenshots/DetainLicense.png" width="45%" style="border: 3px solid #0078D7; margin: 10px;">
-
+<img src="Pictures/1.jpg" alt="Watch the Video" width="100%" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); border: 4px solid #0078D7;">
+<br/>
+<img src="Pictures/2.jpg" alt="Watch the Video" width="100%" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); border: 4px solid #0078D7;">
+<br/>
+<img src="Pictures/3.jpg" alt="Watch the Video" width="100%" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); border: 4px solid #0078D7;">
+<br/>
+<img src="Pictures/4.jpg" alt="Watch the Video" width="100%" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); border: 4px solid #0078D7;">
+<br/>
 </div>
 
 ---
