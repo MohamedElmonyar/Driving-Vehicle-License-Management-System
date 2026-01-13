@@ -815,7 +815,7 @@ This project demonstrates mastery of:
 *Backend Developer | .NET Desktop & Web Specialist*
 
 [![GitHub](https://img.shields.io/badge/GitHub-MohamedElmonyar-181717?style=for-the-badge&logo=github)](https://github.com/MohamedElmonyar)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/your-profile)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)]([https://linkedin.com/in/your-profile](https://www.linkedin.com/in/mohamed-elmonyar/))
 
 ---
 
