@@ -533,9 +533,6 @@ public static int AddNewLicense(
 ---
 
 
-```
-
----
 
 ### 🎨 **Custom Reusable Control**
 
