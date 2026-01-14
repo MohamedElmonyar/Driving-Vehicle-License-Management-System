@@ -125,7 +125,6 @@ Full oversight of users, permissions, fees, and system configuration.
 | **🪪 License Issuance Workflow** | `7 License Classes` • `Sequential Testing System` • `Vision → Theory → Practical` • `Automated Fee Calculation` |
 | **🌍 International Licenses** | `Eligibility Verification` • `Instant Issuance for Valid Holders` • `Expiry Management` • `Document Generation` |
 | **🔄 License Lifecycle** | `Renewal Processing` • `Replacement (Lost/Damaged)` • `Detain & Release System` • `Status Tracking` |
-| **🛡️ Administration & Security** | `User Management (CRUD)` • `Role-Based Access Control` • `Application Types Config` • `Fee Management` |
 
 <br/>
 
@@ -228,20 +227,6 @@ Unlike typical ORM-heavy applications, DVLD pushes business logic to the databas
 
 <br/>
 
-### 🎯 **Advanced Features**
-
-<div align="center">
-
-| Feature | Implementation | Business Value |
-|---------|---------------|----------------|
-| **🔍 Dynamic Filtering** | Custom DataView predicates + LINQ | Find any record in milliseconds from thousands |
-| **📄 Multi-Format Reports** | Crystal Reports / RDLC integration | Professional document generation |
-| **🎨 Custom Controls** | Reusable WinForms components | Consistent UI/UX across 50+ forms |
-| **🔐 RBAC System** | Permission-based form access | Granular security control |
-| **📋 Audit Trail** | Every action logged with user context | Full accountability and compliance |
-
-</div>
-
 ---
 
 ## 🏗 Architecture & Design Patterns
@@ -307,16 +292,7 @@ DVLD-System/
 │   ├── clsDetainedLicenseData.cs
 │   ├── clsUserData.cs
 │   └── clsDataAccessSettings.cs        # Connection String
-│
-└── 📂 SQL/
-    ├── DVLD_Schema.sql                 # Database Schema
-    ├── StoredProcedures/               # All SPs
-    │   ├── SP_People.sql
-    │   ├── SP_Applications.sql
-    │   ├── SP_Licenses.sql
-    │   └── SP_Tests.sql
-    └── Views/                          # Complex Queries
-        └── Views_All.sql
+
 ```
 
 ---
@@ -327,7 +303,8 @@ DVLD-System/
 
 ### Entity Relationship Diagram
 
-> 📊 **35+ Normalized Tables • 80+ Stored Procedures • 15+ Views**
+<img src="Pictures/4.jpg" alt="Watch the Video" width="100%" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); border: 4px solid #0078D7;">
+<br/>
 
 </div>
 
@@ -555,47 +532,7 @@ public static int AddNewLicense(
 
 ---
 
-### 🔐 **Security Implementation**
 
-```csharp
-// Located in: clsUser.cs - Login Method
-public static clsUser FindByUsernameAndPassword(string Username, string Password)
-{
-    int UserID = -1;
-
-    SqlConnection connection = new SqlConnection(clsDataAccessSettings.ConnectionString);
-    
-    // ⚠️ Password should be hashed (SHA256/Argon2) in production
-    string query = @"SELECT UserID FROM Users 
-                     WHERE Username = @Username 
-                     AND Password = @Password 
-                     AND IsActive = 1";
-
-    SqlCommand command = new SqlCommand(query, connection);
-    command.Parameters.AddWithValue("@Username", Username);
-    command.Parameters.AddWithValue("@Password", Password); // Hash this!
-
-    try
-    {
-        connection.Open();
-        object result = command.ExecuteScalar();
-
-        if (result != null && int.TryParse(result.ToString(), out int userID))
-        {
-            UserID = userID;
-        }
-    }
-    catch (Exception ex)
-    {
-        clsEventLogger.LogError("FindUser", ex.Message);
-    }
-    finally
-    {
-        connection.Close();
-    }
-
-    return (UserID != -1) ? clsUser.Find(UserID) : null;
-}
 ```
 
 ---
@@ -693,8 +630,7 @@ public partial class ctrlPersonCard : UserControl
 <br/>
 <img src="Pictures/3.jpg" alt="Watch the Video" width="100%" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); border: 4px solid #0078D7;">
 <br/>
-<img src="Pictures/4.jpg" alt="Watch the Video" width="100%" style="border-radius: 12px; box-shadow: 0 8px 16px rgba(0,0,0,0.2); border: 4px solid #0078D7;">
-<br/>
+
 </div>
 
 ---
@@ -782,12 +718,11 @@ Note: Change this immediately after first login!
 
 | Metric | Count | Description |
 |--------|-------|-------------|
-| **📄 Forms** | 50+ | Comprehensive UI coverage |
+| **📄 Forms** | 20+ | Comprehensive UI coverage |
 | **🔧 Business Classes** | 25+ | Core domain entities |
-| **🗄️ Stored Procedures** | 80+ | Database operations |
-| **👁️ Database Views** | 15+ | Complex queries |
-| **🎨 Custom Controls** | 12+ | Reusable components |
-| **👥 User Roles** | 3+ | Admin, Operator, Viewer |
+| **🗄️ Stored Procedures** | 50+ | Database operations |
+| **🎨 Custom Controls** | 5+ | Reusable components |
+
 
 </div>
 
